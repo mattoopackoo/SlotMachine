@@ -22,103 +22,158 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnRestart = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.btnTry = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblSlotOne = New System.Windows.Forms.Label()
+        Me.lblSlotTwo = New System.Windows.Forms.Label()
+        Me.lblSlotThree = New System.Windows.Forms.Label()
+        Me.picConfetti = New System.Windows.Forms.PictureBox()
+        Me.picSlotMachine = New System.Windows.Forms.PictureBox()
+        Me.btnRestart = New System.Windows.Forms.Button()
+        Me.lblBalance = New System.Windows.Forms.Label()
+        Me.lblBalanceAmount = New System.Windows.Forms.Label()
+        Me.btnTryAgain = New System.Windows.Forms.Button()
+        CType(Me.picConfetti, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picSlotMachine, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'btnRestart
-        '
-        Me.btnRestart.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRestart.Location = New System.Drawing.Point(244, 172)
-        Me.btnRestart.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.btnRestart.Name = "btnRestart"
-        Me.btnRestart.Size = New System.Drawing.Size(151, 54)
-        Me.btnRestart.TabIndex = 5
-        Me.btnRestart.Text = "Restart?"
-        Me.btnRestart.UseVisualStyleBackColor = True
-        Me.btnRestart.Visible = False
-        '
-        'Label1
-        '
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(175, 66)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(93, 92)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "0"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnTry
         '
         Me.btnTry.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTry.Location = New System.Drawing.Point(244, 170)
-        Me.btnTry.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnTry.Location = New System.Drawing.Point(253, 337)
+        Me.btnTry.Margin = New System.Windows.Forms.Padding(2)
         Me.btnTry.Name = "btnTry"
-        Me.btnTry.Size = New System.Drawing.Size(151, 56)
-        Me.btnTry.TabIndex = 7
-        Me.btnTry.Text = "Try"
+        Me.btnTry.Size = New System.Drawing.Size(126, 50)
+        Me.btnTry.TabIndex = 12
+        Me.btnTry.Text = "Try!"
         Me.btnTry.UseVisualStyleBackColor = True
         '
-        'Label2
+        'lblSlotOne
         '
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(269, 66)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(93, 92)
-        Me.Label2.TabIndex = 8
-        Me.Label2.Text = "0"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblSlotOne.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSlotOne.ForeColor = System.Drawing.Color.Black
+        Me.lblSlotOne.Location = New System.Drawing.Point(154, 181)
+        Me.lblSlotOne.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblSlotOne.Name = "lblSlotOne"
+        Me.lblSlotOne.Size = New System.Drawing.Size(67, 60)
+        Me.lblSlotOne.TabIndex = 13
+        Me.lblSlotOne.Text = "0"
         '
-        'Label3
+        'lblSlotTwo
         '
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(362, 66)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(93, 92)
-        Me.Label3.TabIndex = 9
-        Me.Label3.Text = "0"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblSlotTwo.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSlotTwo.Location = New System.Drawing.Point(256, 181)
+        Me.lblSlotTwo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblSlotTwo.Name = "lblSlotTwo"
+        Me.lblSlotTwo.Size = New System.Drawing.Size(77, 60)
+        Me.lblSlotTwo.TabIndex = 14
+        Me.lblSlotTwo.Text = "0"
         '
-        'Label4
+        'lblSlotThree
         '
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(24, 17)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(585, 49)
-        Me.Label4.TabIndex = 10
-        Me.Label4.Text = "output"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblSlotThree.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSlotThree.Location = New System.Drawing.Point(370, 181)
+        Me.lblSlotThree.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblSlotThree.Name = "lblSlotThree"
+        Me.lblSlotThree.Size = New System.Drawing.Size(67, 60)
+        Me.lblSlotThree.TabIndex = 15
+        Me.lblSlotThree.Text = "0"
+        '
+        'picConfetti
+        '
+        Me.picConfetti.Image = Global.SlotMachine.My.Resources.Resources.giphy
+        Me.picConfetti.Location = New System.Drawing.Point(82, -15)
+        Me.picConfetti.Margin = New System.Windows.Forms.Padding(2)
+        Me.picConfetti.Name = "picConfetti"
+        Me.picConfetti.Size = New System.Drawing.Size(591, 404)
+        Me.picConfetti.TabIndex = 16
+        Me.picConfetti.TabStop = False
+        Me.picConfetti.Visible = False
+        '
+        'picSlotMachine
+        '
+        Me.picSlotMachine.Image = Global.SlotMachine.My.Resources.Resources.mask
+        Me.picSlotMachine.Location = New System.Drawing.Point(98, 34)
+        Me.picSlotMachine.Margin = New System.Windows.Forms.Padding(2)
+        Me.picSlotMachine.Name = "picSlotMachine"
+        Me.picSlotMachine.Size = New System.Drawing.Size(506, 353)
+        Me.picSlotMachine.TabIndex = 11
+        Me.picSlotMachine.TabStop = False
+        '
+        'btnRestart
+        '
+        Me.btnRestart.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRestart.Location = New System.Drawing.Point(263, 391)
+        Me.btnRestart.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnRestart.Name = "btnRestart"
+        Me.btnRestart.Size = New System.Drawing.Size(133, 51)
+        Me.btnRestart.TabIndex = 17
+        Me.btnRestart.Text = "Restart?"
+        Me.btnRestart.UseVisualStyleBackColor = True
+        Me.btnRestart.Visible = False
+        '
+        'lblBalance
+        '
+        Me.lblBalance.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalance.Location = New System.Drawing.Point(448, 389)
+        Me.lblBalance.Name = "lblBalance"
+        Me.lblBalance.Size = New System.Drawing.Size(126, 23)
+        Me.lblBalance.TabIndex = 18
+        Me.lblBalance.Text = "Balance: 0"
+        '
+        'lblBalanceAmount
+        '
+        Me.lblBalanceAmount.AutoSize = True
+        Me.lblBalanceAmount.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceAmount.Location = New System.Drawing.Point(541, 391)
+        Me.lblBalanceAmount.Name = "lblBalanceAmount"
+        Me.lblBalanceAmount.Size = New System.Drawing.Size(36, 25)
+        Me.lblBalanceAmount.TabIndex = 19
+        Me.lblBalanceAmount.Text = "50"
+        '
+        'btnTryAgain
+        '
+        Me.btnTryAgain.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTryAgain.Location = New System.Drawing.Point(73, 391)
+        Me.btnTryAgain.Name = "btnTryAgain"
+        Me.btnTryAgain.Size = New System.Drawing.Size(170, 51)
+        Me.btnTryAgain.TabIndex = 20
+        Me.btnTryAgain.Text = "Try Again"
+        Me.btnTryAgain.UseVisualStyleBackColor = True
+        Me.btnTryAgain.Visible = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Silver
-        Me.ClientSize = New System.Drawing.Size(631, 238)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.btnTry)
-        Me.Controls.Add(Me.Label1)
+        Me.ClientSize = New System.Drawing.Size(856, 439)
+        Me.Controls.Add(Me.picConfetti)
+        Me.Controls.Add(Me.btnTryAgain)
+        Me.Controls.Add(Me.lblBalanceAmount)
+        Me.Controls.Add(Me.lblBalance)
         Me.Controls.Add(Me.btnRestart)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Controls.Add(Me.lblSlotThree)
+        Me.Controls.Add(Me.lblSlotTwo)
+        Me.Controls.Add(Me.lblSlotOne)
+        Me.Controls.Add(Me.btnTry)
+        Me.Controls.Add(Me.picSlotMachine)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.picConfetti, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picSlotMachine, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents btnRestart As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents picSlotMachine As PictureBox
     Friend WithEvents btnTry As Button
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents lblSlotOne As Label
+    Friend WithEvents lblSlotTwo As Label
+    Friend WithEvents lblSlotThree As Label
+    Friend WithEvents picConfetti As PictureBox
+    Friend WithEvents btnRestart As Button
+    Friend WithEvents lblBalance As Label
+    Friend WithEvents lblBalanceAmount As Label
+    Friend WithEvents btnTryAgain As Button
 End Class
